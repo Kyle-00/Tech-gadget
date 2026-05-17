@@ -1,0 +1,137 @@
+ /* Universal Selector */
+       *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container using rem */
+        .container{
+            max-width: 70rem;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+
+        /* Hero Section using vh */
+        h1{
+            height: 20vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #0f172a, #1e293b);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        /* Grid Layout using percentages */
+        .grid{
+            display: flex;
+            gap: 4%;
+            margin-bottom: 2rem;
+        }
+
+        article{
+            width: 48%;
+            background: white;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* First article only */
+        article:first-of-type{
+            border: 4px solid gold;
+        }
+
+        article h2{
+            margin-bottom: 0.5em;
+        }
+
+        /* Adjacent sibling combinator */
+        h2 + p{
+            color: red;
+            font-weight: bold;
+            margin-top: 0.5em;
+        }
+
+        .price-tag{
+            font-size: 2rem;
+            margin: 1em 0;
+            color: #0f172a;
+        }
+
+        /* Child combinator */
+        .price-tag > span{
+            color: #2563eb;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        button{
+            background-color: #0f172a;
+            color: white;
+            border: none;
+            padding: 1em 2em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        /* Hover pseudo-class */
+        button:hover{
+            background-color: #2563eb;
+        }
+
+        .features{
+            background: white;
+            padding: 2em;
+            border-radius: 10px;
+            list-style: none;
+        }
+
+        .features li{
+            padding: 1em;
+        }
+
+        /* Structural targeting */
+        .features li:nth-child(even){
+            background-color: grey;
+        }
+
+        footer{
+            margin-top: 2rem;
+            text-align: center;
+            padding: 2em;
+            background: #0f172a;
+        }
+
+        /* Descendant combinator */
+        footer a{
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+
+        footer a:hover{
+            color: #38bdf8;
+        }
+
+        /* Responsive Design */
+        @media(max-width: 768px){
+
+            .grid{
+                flex-direction: column;
+            }
+
+            article{
+                width: 100%;
+            }
+        }
