@@ -58,9 +58,10 @@ This project focuses on efficient CSS styling using semantic HTML structure and 
 ## Project Structure
 
 ```plaintext
-techgadget-price-matrix/
+Tech-gadget/
 │
-├── index.html
+|---index.html
+|--- style.css
 └── README.md
 ```
 
@@ -104,13 +105,13 @@ Tested and compatible with:
 1. Download or clone the repository
 
 ```bash
-git clone https://github.com/yourusername/techgadget-price-matrix.git
+git clone https://github.com/Kyle-00/Tech-gadget
 ```
 
 2. Open the project folder
 
 ```bash
-cd techgadget-price-matrix
+cd Tech-gadget
 ```
 
 3. Open `index.html` in your browser
